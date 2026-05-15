@@ -1,0 +1,14 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Local-only
+.vscode/
+.idea/
+node_modules/
+
+# Build / temp
+*.log
+*.tmp
