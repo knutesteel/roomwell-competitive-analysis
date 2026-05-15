@@ -26,16 +26,18 @@ Step 5 currently depends on `publish.ps1` being run on the host machine after ge
 
 ## Publishing
 
-Prereq: [git](https://git-scm.com/download/win) installed. The repo `knutesteel/roomwell-competitive-analysis` already exists on GitHub, so no GitHub CLI is needed.
+**Primary workflow — GitHub Desktop.** The repo is already added to GitHub Desktop. After the weekly scheduled task regenerates the site files:
 
-```powershell
-cd "C:\Users\knute\OneDrive\Documents\Claude\Projects\Massage Management Software\roomwell-competitive-analysis"
-.\publish.ps1
-```
+1. Open GitHub Desktop and select the `roomwell-competitive-analysis` repository.
+2. Review the changed files in the Changes tab.
+3. Type a commit summary, click **Commit to main**.
+4. Click **Push origin**.
 
-The script initializes git locally (first run only), wires up the remote, commits, and pushes. The first push will prompt you to sign in to GitHub via your browser or Windows Credential Manager — that's expected.
+The live site updates within a minute or two.
 
-After the **first** push, enable GitHub Pages once: repo **Settings → Pages → Source: "Deploy from a branch" → Branch: `main` / `root` → Save**. After that, every `publish.ps1` run updates the live site automatically.
+**Scriptable fallback.** `publish.ps1` (and the `run-publish.bat` double-click launcher) do the same thing from the command line — init/remote/add/commit/push — if you'd rather not open the GUI. Requires [git](https://git-scm.com/download/win) installed.
+
+GitHub Pages is already enabled (Settings → Pages → `main` / `root`), so no one-time setup is needed anymore.
 
 ## Themes captured
 
