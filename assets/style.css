@@ -193,6 +193,58 @@ li { margin-bottom: 8px; }
   color: var(--ink-soft);
 }
 
+/* Opportunity + outreach sections */
+.lead {
+  font-size: 1.06rem;
+  color: var(--ink);
+  line-height: 1.65;
+  margin: 0 0 24px;
+}
+section.feature > h2 {
+  border-bottom-color: var(--accent);
+}
+.channel-list {
+  counter-reset: ch;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.channel-list > li {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 16px 20px 16px 56px;
+  margin-bottom: 12px;
+  position: relative;
+}
+.channel-list > li::before {
+  counter-increment: ch;
+  content: counter(ch);
+  position: absolute;
+  left: 18px;
+  top: 16px;
+  width: 26px;
+  height: 26px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.channel-list > li strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--ink);
+}
+.channel-list > li .addresses {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 8px;
+}
+
 /* Footer / archive */
 footer.site {
   margin-top: 80px;
