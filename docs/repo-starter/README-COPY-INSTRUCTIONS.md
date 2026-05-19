@@ -1,17 +1,17 @@
 # How to use this starter
 
-These files are not meant to live in `roomwell-competitive-analysis` long-term. They are the bootstrap pack for the new private repo (`knutesteel/RoomWellAppBuild`). Once the new repo exists, copy the contents of `docs/repo-starter/` to its root, then delete this folder from the analysis repo.
+These files are not meant to live in `roomwell-competitive-analysis` long-term. They are the bootstrap pack for the new private repo (`knutesteel/RoomwellAppClaudeCode`). Once the new repo exists, copy the contents of `docs/repo-starter/` to its root, then delete this folder from the analysis repo.
 
 ## Step-by-step
 
 ```bash
 # 1. Confirm the new repo exists on GitHub (private)
-#    Repo: knutesteel/RoomWellAppBuild
+#    Repo: knutesteel/RoomwellAppClaudeCode
 #    Should be initialized empty (no README, no .gitignore — we have our own)
 
 # 2. Clone the new empty repo somewhere local
-git clone git@github.com:knutesteel/RoomWellAppBuild.git
-cd RoomWellAppBuild
+git clone git@github.com:knutesteel/RoomwellAppClaudeCode.git
+cd RoomwellAppClaudeCode
 
 # 3. Copy the starter contents
 #    Adjust paths to wherever you have the analysis repo checked out
