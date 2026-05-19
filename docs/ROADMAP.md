@@ -23,7 +23,7 @@ Each milestone is gated on a working, demoable outcome — not on tickets-closed
 ### M0 — Foundation *(suggested: 1–2 weeks)*
 **Demo outcome:** Empty signed-in dashboard at `app.roomwell.com`, with a real account row in Postgres, all CI green, error tracking firing on a test error.
 
-- Create private repo `roomwell-app`, push the `repo-starter/` contents
+- ~~Create private repo, push initial scaffold~~ **Done** — `knutesteel/RoomwellAppClaudeCode` (commit `9dd36a6`)
 - Monorepo scaffold: pnpm workspaces, Turborepo, shared `tsconfig`, ESLint, Prettier
 - Next.js 15 App Router app at `apps/web`
 - Tailwind CSS + shadcn/ui baseline + first dozen primitives
@@ -253,7 +253,7 @@ Repeating from the PRD because scope creep happens at build time, not planning t
 
 If we want to skip "plan the plan" and start building, here are the first ~15 tickets for M0:
 
-1. Create `roomwell-app` private repo, push `repo-starter/` contents
+1. ~~Create private repo, push initial scaffold~~ **Done** — `knutesteel/RoomwellAppClaudeCode` (commit `9dd36a6`)
 2. Wire pnpm workspaces + Turborepo, get `pnpm dev` running an empty Next.js app
 3. Configure Tailwind + install initial shadcn primitives (button, input, label, card, dialog)
 4. Connect Supabase project (US East), generate service-role + anon keys, store in Vercel + GH Actions secrets
