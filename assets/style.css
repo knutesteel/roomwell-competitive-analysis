@@ -361,3 +361,78 @@ footer.site .repo-link { color: var(--muted); }
   background: var(--warn-soft);
   color: var(--warn);
 }
+
+/* Market size stat grid */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 28px 0;
+}
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 18px 20px;
+}
+.stat-card--warn {
+  background: var(--warn-soft);
+  border-color: var(--warn);
+}
+.stat-card--accent {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+.stat-num {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+.stat-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.stat-note {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  line-height: 1.45;
+}
+
+/* Market analysis prose block */
+.market-analysis {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 24px 28px;
+  margin-top: 8px;
+}
+.market-analysis h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--ink);
+  margin: 0 0 14px;
+}
+.market-analysis p {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  line-height: 1.65;
+  margin: 0 0 14px;
+}
+.market-analysis p:last-of-type {
+  margin-bottom: 0;
+}
+.muted-note {
+  font-size: 0.78rem !important;
+  color: var(--muted) !important;
+  border-top: 1px solid var(--rule);
+  padding-top: 12px;
+  margin-top: 16px !important;
+}
