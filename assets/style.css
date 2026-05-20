@@ -284,3 +284,80 @@ footer.site .repo-link { color: var(--muted); }
 }
 .toc ul { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; }
 .toc li { margin-bottom: 4px; }
+
+/* Top-of-page alert banner */
+.alert-banner {
+  background: var(--warn-soft);
+  border-left: 4px solid var(--warn);
+  border-radius: 6px;
+  padding: 14px 20px;
+  margin-bottom: 32px;
+  font-size: 0.95rem;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.alert-banner a { color: var(--warn); font-weight: 600; }
+
+/* Competitive analysis summary table */
+.comp-table-wrap {
+  overflow-x: auto;
+  margin-top: 24px;
+}
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background: var(--surface);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+}
+.comp-table thead th {
+  background: var(--accent);
+  color: #fff;
+  text-align: left;
+  padding: 10px 14px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 600;
+}
+.comp-table tbody tr {
+  border-bottom: 1px solid var(--rule);
+}
+.comp-table tbody tr:last-child {
+  border-bottom: none;
+}
+.comp-table tbody tr:hover {
+  background: var(--accent-soft);
+}
+.comp-table tbody td {
+  padding: 10px 14px;
+  color: var(--ink);
+  vertical-align: top;
+}
+.comp-table .row-highlight td {
+  background: #fffbf0;
+}
+.comp-table .row-highlight:hover td {
+  background: var(--accent-soft);
+}
+.momentum {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.momentum.rising {
+  background: var(--good-soft);
+  color: var(--good);
+}
+.momentum.stable {
+  background: var(--neutral-soft);
+  color: var(--neutral);
+}
+.momentum.declining {
+  background: var(--warn-soft);
+  color: var(--warn);
+}
