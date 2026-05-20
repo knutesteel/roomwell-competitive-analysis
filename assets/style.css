@@ -436,3 +436,26 @@ footer.site .repo-link { color: var(--muted); }
   padding-top: 12px;
   margin-top: 16px !important;
 }
+
+/* Collapsible details panel */
+.details-panel {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 0;
+  margin-top: 16px;
+}
+.details-panel summary {
+  padding: 12px 18px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.details-panel summary::-webkit-details-marker { display: none; }
+.details-panel[open] summary { border-bottom: 1px solid var(--rule); }
+.details-panel > *:not(summary) {
+  padding: 0 18px 18px;
+}
